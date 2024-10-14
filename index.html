@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV de José Genaro Huerta Villalobos, Ingeniero en Sistemas con experiencia en TI y desarrollo de soluciones innovadoras.">
+    <title>Mi CV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="profile-section">
+                <h1>José Genaro Huerta Villalobos</h1>
+                <p>Ingeniero en Sistemas con experiencia en desarrollo de soluciones tecnológicas. Me apasiona crear e innovar en un entorno dinámico y desafiante.</p>
+                <a href="mailto:genarohuertav11@gmail.com" class="contact-link">genarohuertav11@gmail.com</a>
+            </div>
+            <div class="profile-image-container">
+                <img src="02258476-20ab-4585-bd31-c80c1f830e4b.jfif" alt="José Genaro Huerta Villalobos" class="profile-pic">
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="https://profile.indeed.com/?hl=es_MX&co=MX&from=gnav-jobseeker-profile--profile-one-frontend" target="_blank" class="btn">Indeed</a>
+            <a href="Genaro_Huerta resumen cv .pdf" class="btn" download>Descargar CV</a>
+            <a href="https://www.youtube.com/watch?v=tu_video_id" target="_blank" class="btn">Ver Video</a>
+        </div>
+    </header>
+
+    <section id="experience" class="section">
+        <h2>Experiencia Laboral</h2>
+        <div class="experience-content">
+            <div class="job">
+                <h3>Ayudante general</h3>
+                <p><strong>Enero 2024 - Actualmente</strong></p>
+                <p>Servicios especializados Huerta-Hermosillo, Son.</p>
+            </div>
+            <div class="job">
+                <h3>Game Máster</h3>
+                <p><strong>Noviembre 2023 - Diciembre 2023</strong></p>
+                <p>Enigma Rooms-Hermosillo</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Educación</h2>
+        <div class="education-content">
+            <div class="education">
+                <h3>Licenciatura en Ing sistemas de información</h3>
+                <p><strong>Unison - Hermosillo, Son. enero 2023 - Actualmente</strong></p>
+            </div>
+            <div class="education">
+                <h3>Idiomas</h3>
+                <p><strong>• Español - Avanzado<br>• Inglés - Fluido</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contacto: <a href="mailto:genarohuertav11@gmail.com">genarohuertav11@gmail.com</a></p>
+    </footer>
+
+    <!-- Script de animaciones -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sections = document.querySelectorAll('.section, header, footer');
+            
+            function revealSection() {
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    const triggerPoint = window.innerHeight - 100;
+
+                    if (sectionTop < triggerPoint) {
+                        section.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', revealSection);
+            revealSection(); // Para cargar la primera sección en pantalla
+        });
+    </script>
+</body>
+</html>
